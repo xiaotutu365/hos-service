@@ -24,10 +24,9 @@ public class HosDataSourceConfig {
     @Bean(name = "HosDataSource")
     @Primary
     public DataSource hosDataSource() throws IOException {
-        // 1.huo qu datasource xiangguan xinxi
         ResourceLoader loader = new DefaultResourceLoader();
         InputStream inputStream = loader.getResource("classpath:application.properties").getInputStream();
-        Properties properties = new Properties();123
+        Properties properties = new Properties();
         properties.load(inputStream);
         Set<Object> keys = properties.keySet();
         Properties dsProperties = new Properties();

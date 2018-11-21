@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.trey.bigdata.hos.core.usermgr.dao.UserInfoMapper">
+    <resultMap id="UserInfoResultMap" type="com.trey.bigdata.hos.core.usermgr.model.UserInfo">
+        <id column="USER_ID" property="userId"/>
+        <result column="USER_NAME" property="userName"/>
+        <result column="PASSWORD" property="password"/>
+        <result column="SYSTEM_ROLE" property="systemRole"/>
+        <result column="DETAIL" property="detail"/>
+        <result column="CREATE_TIME" property="createTime"/>
+    </resultMap>
+
+    <insert id="addUser">
+        INSERT INTO USER_INFO(USER_ID,USER_NAME,PASSWORD,SYSTEM_ROLE,DETAIL,CREATE_TIME)
+        VALUES ()
+    </insert>
+
+
+</mapper>
