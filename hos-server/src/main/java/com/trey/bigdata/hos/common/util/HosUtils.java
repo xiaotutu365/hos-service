@@ -14,13 +14,13 @@ public class HosUtils {
     public static final String OBJ_META_CF = "cf";
     public static final byte[] OBJ_META_CF_BYTES = OBJ_META_CF.getBytes();
     public static final String OBJ_CONT_CF = "c";
-    public static final byte[] OBJ_SUBDIR_CF_BYTES = OBJ_CONT_CF.getBytes();
+    public static final byte[] OBJ_CONT_CF_BYTES = OBJ_CONT_CF.getBytes();
 
     public static final byte[] DIR_SEQID_QUALIFIER = "u".getBytes();
     public static final byte[] OBJ_CONT_QUALIFIER = "c".getBytes();
     public static final byte[] OBJ_LEN_QUALIFIER = "l".getBytes();
     public static final byte[] OBJ_PROPS_QUALIFIER = "p".getBytes();
-    public static final byte[] DIR_MEIDATYPE_QUALIFIER = "m".getBytes();
+    public static final byte[] OBJ_MEIDATYPE_QUALIFIER = "m".getBytes();
 
     public static final String FILE_STORE_ROOT = "/hos";
     public static final int FILE_STORE_THRESHOLD = 20 * 1024 * 1024;

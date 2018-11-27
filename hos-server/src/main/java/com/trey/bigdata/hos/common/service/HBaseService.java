@@ -14,15 +14,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class HBaseService {
-    // 1、创建表
-    // 2、删除表
-    // 3、删除列族
-    // 4、删除列
-    // 5、删除行
-    // 6、读取行
-    // 7、获取scanner
-    // 8、插入行
-    // 9、批量插入行
 
     /**
      * 创建表
@@ -214,6 +205,17 @@ public class HBaseService {
         } catch (IOException e) {
             e.printStackTrace();
             throw new HosServerException(ErrorCodes.ERROR_HBASE, "put row error");
+        }
+    }
+
+    public static boolean existsRow(Connection conn, String tableName, String row) {
+        try {
+            Table table = conn.getTable(TableName.valueOf(tableName));
+            Get get = new Get(Bytes.toBytes(row));
+            return table.exists(get);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new HosServerException(ErrorCodes.ERROR_HBASE, "get row error");
         }
     }
 }
