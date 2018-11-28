@@ -21,14 +21,14 @@ public class UserInfo {
 
     private Date createTime;
 
-    public UserInfo(String userName, String password, String detail, SystemRole systemRole, Date createTime) {
+    public UserInfo(String userName, String password, String detail, SystemRole systemRole) {
         this.userId = CoreUtils.getUUIDStr();
         this.userName = userName;
         // todo
         this.password = password;
         this.detail = detail;
         this.systemRole = systemRole;
-        this.createTime = createTime;
+        this.createTime = new Date();
     }
 
 }

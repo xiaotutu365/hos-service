@@ -5,7 +5,6 @@ import com.trey.bigdata.hos.common.HosObjectSummary;
 import com.trey.bigdata.hos.common.ObjectListResult;
 import com.trey.bigdata.hos.common.ObjectMetaData;
 import com.trey.bigdata.hos.common.util.HosUtils;
-import com.trey.bigdata.hos.core.usermgr.model.SystemRole;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
